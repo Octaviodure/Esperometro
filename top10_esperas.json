@@ -25,14 +25,6 @@
   },
   {
     "posicion": 4,
-    "duracion_segundos": 3,
-    "duracion_formateada": "00m 03s",
-    "fecha": "2026-07-26",
-    "hora": "12:08",
-    "descripcion": "Test phone"
-  },
-  {
-    "posicion": 5,
     "duracion_segundos": 1,
     "duracion_formateada": "00m 01s",
     "fecha": "2026-07-26",
