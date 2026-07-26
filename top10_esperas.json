@@ -6,37 +6,5 @@
     "fecha": "2026-07-26",
     "hora": "12:00",
     "descripcion": "Test"
-  },
-  {
-    "posicion": 2,
-    "duracion_segundos": 4,
-    "duracion_formateada": "00m 04s",
-    "fecha": "2026-07-26",
-    "hora": "12:01",
-    "descripcion": "Test"
-  },
-  {
-    "posicion": 3,
-    "duracion_segundos": 4,
-    "duracion_formateada": "00m 04s",
-    "fecha": "2026-07-26",
-    "hora": "12:08",
-    "descripcion": "Test phone 2"
-  },
-  {
-    "posicion": 4,
-    "duracion_segundos": 3,
-    "duracion_formateada": "00h 00m 03s",
-    "fecha": "2026-07-20",
-    "hora": "18:45",
-    "descripcion": "Espera Inicial"
-  },
-  {
-    "posicion": 5,
-    "duracion_segundos": 1,
-    "duracion_formateada": "00m 01s",
-    "fecha": "2026-07-26",
-    "hora": "12:06",
-    "descripcion": "T2"
   }
 ]
