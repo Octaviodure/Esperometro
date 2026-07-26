@@ -1,6 +1,14 @@
 [
   {
     "posicion": 1,
+    "duracion_segundos": 6,
+    "duracion_formateada": "00m 06s",
+    "fecha": "2026-07-26",
+    "hora": "12:00",
+    "descripcion": "Test"
+  },
+  {
+    "posicion": 2,
     "duracion_segundos": 3,
     "duracion_formateada": "00h 00m 03s",
     "fecha": "2026-07-20",
