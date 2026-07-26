@@ -1,6 +1,14 @@
 [
   {
     "posicion": 1,
+    "duracion_segundos": 15,
+    "duracion_formateada": "00m 15s",
+    "fecha": "2026-07-26",
+    "hora": "16:31",
+    "descripcion": "Esperando a mi hijita para ver Netflix"
+  },
+  {
+    "posicion": 2,
     "duracion_segundos": 1,
     "duracion_formateada": "00m 01s",
     "fecha": "2026-07-26",
