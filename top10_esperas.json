@@ -22,5 +22,13 @@
     "fecha": "2026-07-20",
     "hora": "18:45",
     "descripcion": "Espera Inicial"
+  },
+  {
+    "posicion": 4,
+    "duracion_segundos": 1,
+    "duracion_formateada": "00m 01s",
+    "fecha": "2026-07-26",
+    "hora": "12:06",
+    "descripcion": "T2"
   }
 ]
