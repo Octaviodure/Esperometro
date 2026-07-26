@@ -14,13 +14,5 @@
     "fecha": "2026-07-26",
     "hora": "12:20",
     "descripcion": "Test 2"
-  },
-  {
-    "posicion": 3,
-    "duracion_segundos": 2,
-    "duracion_formateada": "00m 02s",
-    "fecha": "2026-07-26",
-    "hora": "12:26",
-    "descripcion": "T3"
   }
 ]
