@@ -1,34 +1,10 @@
 [
   {
     "posicion": 1,
-    "duracion_segundos": 6,
-    "duracion_formateada": "00m 06s",
+    "duracion_segundos": 1,
+    "duracion_formateada": "00m 01s",
     "fecha": "2026-07-26",
     "hora": "12:00",
-    "descripcion": "Test"
-  },
-  {
-    "posicion": 2,
-    "duracion_segundos": 3,
-    "duracion_formateada": "00m 03s",
-    "fecha": "2026-07-26",
-    "hora": "12:20",
-    "descripcion": "Test 2"
-  },
-  {
-    "posicion": 3,
-    "duracion_segundos": 3,
-    "duracion_formateada": "00m 03s",
-    "fecha": "2026-07-26",
-    "hora": "12:29",
-    "descripcion": "T29"
-  },
-  {
-    "posicion": 4,
-    "duracion_segundos": 2,
-    "duracion_formateada": "00m 02s",
-    "fecha": "2026-07-26",
-    "hora": "12:27",
-    "descripcion": "T27"
+    "descripcion": "Espera Inicial - Test"
   }
 ]
