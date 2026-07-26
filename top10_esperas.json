@@ -1,0 +1,34 @@
+[
+  {
+    "posicion": 1,
+    "duracion_segundos": 4860,
+    "duracion_formateada": "01h 21m 00s",
+    "fecha": "2026-07-20",
+    "hora": "18:45",
+    "descripcion": "Maquillaje completo y peinado de rizos para cumpleaños"
+  },
+  {
+    "posicion": 2,
+    "duracion_segundos": 3600,
+    "duracion_formateada": "01h 00m 00s",
+    "fecha": "2026-07-18",
+    "hora": "15:10",
+    "descripcion": "Probándose 4 combinaciones diferentes de vestidos"
+  },
+  {
+    "posicion": 3,
+    "duracion_segundos": 2850,
+    "duracion_formateada": "00h 47m 30s",
+    "fecha": "2026-07-22",
+    "hora": "20:00",
+    "descripcion": "Buscando su teléfono rosado y los audífonos"
+  },
+  {
+    "posicion": 4,
+    "duracion_segundos": 2040,
+    "duracion_formateada": "00h 34m 00s",
+    "fecha": "2026-07-25",
+    "hora": "12:30",
+    "descripcion": "Atándose los cordones de sus botas rosadas superhéroe"
+  }
+]

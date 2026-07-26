@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#ff4e79">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Esperómetro de Cami ❤️</title>
+  
+  <!-- FontAwesome Icons & Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- App Main Container -->
+  <div class="mobile-container">
+    
+    <!-- Header Hero Banner with Camila Superhéroe -->
+    <header class="hero-banner">
+      <div class="hero-bg-overlay"></div>
+      <div class="badge-tag">
+        <i class="fa-solid fa-heart heart-pulse"></i> Edición Oficial Papá & Cami
+      </div>
+      <div class="avatar-wrapper">
+        <img src="assets/cami_superhero.jpg" alt="Camila Superhéroe - Dulce de Papá" class="avatar-img">
+        <span class="cape-sparkle left">✨</span>
+        <span class="cape-sparkle right">⭐</span>
+      </div>
+      <h1 class="app-title">Esperómetro <span class="highlight">de Cami</span></h1>
+      <p class="subtitle">“Dulce de Papá! ❤️” &bull; Tiempo histórico de espera acumulado</p>
+    </header>
+
+    <!-- Historical Total Counter Card -->
+    <section class="card counter-card">
+      <div class="card-header">
+        <span class="card-label"><i class="fa-solid fa-hourglass-half"></i> TIEMPO TOTAL ACUMULADO</span>
+        <span class="status-pill idle" id="status-pill">
+          <span class="dot"></span> En espera de la próxima salida
+        </span>
+      </div>
+
+      <div class="time-display" id="total-time-display">
+        <div class="time-unit">
+          <span class="num" id="val-dias">00</span>
+          <span class="label">DÍAS</span>
+        </div>
+        <span class="colon">:</span>
+        <div class="time-unit">
+          <span class="num" id="val-horas">00</span>
+          <span class="label">HORAS</span>
+        </div>
+        <span class="colon">:</span>
+        <div class="time-unit">
+          <span class="num" id="val-minutos">00</span>
+          <span class="label">MIN</span>
+        </div>
+        <span class="colon">:</span>
+        <div class="time-unit">
+          <span class="num" id="val-segundos">00</span>
+          <span class="label">SEG</span>
+        </div>
+      </div>
+
+      <div class="fun-equivalence" id="fun-equivalence">
+        <i class="fa-solid fa-film"></i> ¡Equivale a unas <strong>2 películas</strong> enteras sentadito en el sofá!
+      </div>
+    </section>
+
+    <!-- Active Wait Live Banner (Hidden when idle) -->
+    <section class="active-wait-banner hidden" id="active-wait-banner">
+      <div class="pulse-ring"></div>
+      <div class="active-info">
+        <span class="waiting-title">⏱️ ESPERANDO A CAMILA AHORA MISMO</span>
+        <div class="live-stopwatch" id="live-stopwatch">00:00:00</div>
+        <span class="live-sub" id="live-subtext">Papá paciencia nivel Maestro Zen... 🧘‍♂️</span>
+      </div>
+    </section>
+
+    <!-- Primary Action Buttons (Mobile Finger Friendly) -->
+    <section class="controls-section">
+      <button class="btn btn-start" id="btn-start">
+        <span class="btn-icon"><i class="fa-solid fa-play"></i></span>
+        <span class="btn-text-block">
+          <strong class="btn-title">ACTIVAR CRONÓMETRO</strong>
+          <small class="btn-sub">¡Camila dijo "ya casi estoy"! ⏱️</small>
+        </span>
+      </button>
+
+      <button class="btn btn-stop disabled" id="btn-stop" disabled>
+        <span class="btn-icon"><i class="fa-solid fa-square"></i></span>
+        <span class="btn-text-block">
+          <strong class="btn-title">¡AL FIN LISTA! (DETENER)</strong>
+          <small class="btn-sub">Sumar esta espera al histórico 🏁</small>
+        </span>
+      </button>
+    </section>
+
+    <!-- Top 10 Longest Waits Section -->
+    <section class="card top10-card">
+      <div class="top10-header">
+        <div>
+          <h2 class="section-title"><i class="fa-solid fa-trophy golden-icon"></i> Top 10 Esperas Más Prolongadas</h2>
+          <p class="section-desc">Las sesiones legendarias donde Camila superó los límites del tiempo</p>
+        </div>
+      </div>
+
+      <div class="top10-list" id="top10-list">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </section>
+
+    <!-- Persistence & Sync Footer Menu -->
+    <footer class="app-footer">
+      <div class="sync-status-bar" id="sync-status-bar">
+        <i class="fa-solid fa-hard-drive"></i> Archivos de persistencia: <strong id="persistence-mode-label">Archivos JSON (Local + Sync)</strong>
+      </div>
+      
+      <div class="footer-buttons">
+        <button class="btn-subtle" id="btn-open-sync">
+          <i class="fa-brands fa-github"></i> Conectar GitHub / Archivos JSON
+        </button>
+        <button class="btn-subtle" id="btn-export-json">
+          <i class="fa-solid fa-download"></i> Descargar JSON
+        </button>
+      </div>
+      
+      <p class="made-with">Creado con ❤️ para Papá Otto y Camila</p>
+    </footer>
+
+  </div> <!-- /mobile-container -->
+
+  <!-- MODAL: Nueva Espera Entró al Top 10 -->
+  <div class="modal-overlay hidden" id="modal-top10">
+    <div class="modal-card bounce-in">
+      <div class="modal-badge">🏆 ¡NUEVO RÉCORD TOP 10!</div>
+      <h3 class="modal-title">¡Espera Épica Registrada!</h3>
+      <p class="modal-duration-intro">
+        Esta espera duró <strong id="modal-duration-highlight">48 minutos</strong> y entra directo a las <strong>10 esperas más largas</strong> de la historia.
+      </p>
+
+      <form id="form-top10-desc">
+        <label for="input-activity" class="input-label">¿Qué estaba haciendo Camila?</label>
+        <input type="text" id="input-activity" class="text-input" placeholder="Ej: Maquillaje, probándose zapatos..." required maxlength="90">
+        
+        <!-- Fast Quick-Chips for mobile typing ease -->
+        <div class="chip-group-label">O toca una opción rápida:</div>
+        <div class="chips-container">
+          <button type="button" class="chip-btn" data-chip="💄 Maquillaje y peinado de gala">💄 Maquillaje</button>
+          <button type="button" class="chip-btn" data-chip="👗 Probándose 4 outfits diferentes">👗 Probándose ropa</button>
+          <button type="button" class="chip-btn" data-chip="👠 Buscando el par de zapatos indicado">👠 Zapatos</button>
+          <button type="button" class="chip-btn" data-chip="📱 Chateando / escuchando música">📱 Teléfono/Música</button>
+          <button type="button" class="chip-btn" data-chip="🎒 Buscando llaves o bolso">🎒 Llaves / Bolso</button>
+          <button type="button" class="chip-btn" data-chip="✨ Último toque 'ya casi salgo'">✨ "Ya casi salgo"</button>
+        </div>
+
+        <button type="submit" class="btn btn-save-record">
+          <i class="fa-solid fa-floppy-disk"></i> Guardar en Top-10 Persistente
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL: Configuración de Persistencia GitHub / Archivos -->
+  <div class="modal-overlay hidden" id="modal-sync">
+    <div class="modal-card">
+      <button class="modal-close" id="btn-close-sync">&times;</button>
+      <h3 class="modal-title"><i class="fa-solid fa-database"></i> Archivos de Persistencia</h3>
+      <p class="modal-desc">
+        La aplicación guarda automáticamente en dos archivos sencillos:
+        <code>tiempo_acumulado.json</code> y <code>top10_esperas.json</code>.
+      </p>
+
+      <div class="sync-options">
+        <!-- Option 1: Direct File Download/Upload -->
+        <div class="sync-box">
+          <h4><i class="fa-solid fa-file-code"></i> 1. Archivos JSON Locales</h4>
+          <p>Puedes exportar o cargar los dos archivos directamente desde tu celular:</p>
+          <div class="flex-row">
+            <button class="btn-small" id="btn-download-both"><i class="fa-solid fa-download"></i> Descargar JSONs</button>
+            <label class="btn-small btn-outline cursor-pointer">
+              <i class="fa-solid fa-upload"></i> Cargar JSON
+              <input type="file" id="input-import-json" accept=".json" style="display:none;">
+            </label>
+          </div>
+        </div>
+
+        <!-- Option 2: GitHub API Auto Sync -->
+        <div class="sync-box">
+          <h4><i class="fa-brands fa-github"></i> 2. Auto-Sincronización con GitHub Pages</h4>
+          <p>Para que cuando detengas el reloj en tu teléfono se actualicen los archivos en tu repositorio GitHub automáticamente:</p>
+          <input type="text" id="gh-repo" class="text-input sm" placeholder="usuario/esperometro-cami (ej: odure/esperometro)">
+          <input type="password" id="gh-token" class="text-input sm" placeholder="GitHub Personal Access Token (PAT)">
+          <button class="btn-small btn-primary" id="btn-save-gh-config"><i class="fa-solid fa-check"></i> Guardar y Sincronizar Ahora</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
