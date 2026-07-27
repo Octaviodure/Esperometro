@@ -417,7 +417,83 @@ body {
   border: 1px solid #e5e7eb;
   border-radius: var(--radius-lg);
   padding: 12px 14px;
-  transition: transform 0.15s ease;
+  transition: all 0.15s ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+.top10-item:hover {
+  border-color: var(--primary);
+  box-shadow: 0 4px 14px rgba(255, 59, 110, 0.15);
+}
+
+.top10-item:active {
+  transform: scale(0.98);
+}
+
+.top10-chevron {
+  color: #9ca3af;
+  font-size: 0.85rem;
+  margin-left: 2px;
+  flex-shrink: 0;
+}
+
+/* Modal Detalle Top 10 */
+.detail-box {
+  margin-top: 14px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.86rem;
+}
+
+.detail-row.full-col {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.detail-label {
+  font-weight: 700;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.detail-value {
+  font-weight: 800;
+  color: #1f2937;
+}
+
+.detail-value.highlight {
+  color: var(--primary);
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.15rem;
+}
+
+.detail-description-text {
+  background: #ffffff;
+  border: 1.5px solid #ffd5e1;
+  border-radius: 12px;
+  padding: 12px 14px;
+  width: 100%;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.45;
+  word-break: break-word;
 }
 
 .top10-item.rank-1 {

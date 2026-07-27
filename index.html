@@ -28,7 +28,7 @@
         <i class="fa-solid fa-heart heart-pulse"></i> Edición Oficial Papá & Cami
       </div>
       <div class="avatar-wrapper">
-        <img src="cami_superhero.jpg" alt="Camila Superhéroe - Dulce de Papá" class="avatar-img">
+        <img src="assets/cami_superhero.jpg" alt="Camila Superhéroe - Dulce de Papá" class="avatar-img">
         <span class="cape-sparkle left">✨</span>
         <span class="cape-sparkle right">⭐</span>
       </div>
@@ -106,7 +106,7 @@
       <div class="top10-header">
         <div>
           <h2 class="section-title"><i class="fa-solid fa-trophy golden-icon"></i> Top 10 Esperas Más Prolongadas</h2>
-          <p class="section-desc">Las sesiones legendarias donde Camila superó los límites del tiempo</p>
+          <p class="section-desc">Toca cualquier espera para ver la descripción y datos completos 🔍</p>
         </div>
       </div>
 
@@ -199,6 +199,42 @@
           <button class="btn-small btn-primary" id="btn-save-gh-config"><i class="fa-solid fa-check"></i> Guardar y Sincronizar Ahora</button>
         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Ver Detalle Completo de una Espera Top 10 -->
+  <div class="modal-overlay hidden" id="modal-detail-top10">
+    <div class="modal-card">
+      <button class="modal-close" id="btn-close-detail">&times;</button>
+      <div class="modal-badge" id="detail-rank-badge">🏆 PUESTO #1</div>
+      <h3 class="modal-title" id="detail-title">Detalle de la Espera</h3>
+      
+      <div class="detail-box">
+        <div class="detail-row">
+          <span class="detail-label"><i class="fa-solid fa-trophy"></i> Clasificación:</span>
+          <strong class="detail-value" id="detail-rank-text">#1 (Medalla de Oro 🥇)</strong>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label"><i class="fa-solid fa-stopwatch"></i> Duración Formateada:</span>
+          <strong class="detail-value highlight" id="detail-duration">01h 21m 00s</strong>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label"><i class="fa-solid fa-hourglass-start"></i> Segundos Exactos:</span>
+          <span class="detail-value" id="detail-seconds">4,860 segundos</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label"><i class="fa-regular fa-calendar-days"></i> Fecha y Hora:</span>
+          <span class="detail-value" id="detail-date-time">2026-07-20 - 18:45</span>
+        </div>
+        <div class="detail-row full-col">
+          <span class="detail-label"><i class="fa-solid fa-comment-dots"></i> Descripción Completa de la Actividad:</span>
+          <p class="detail-description-text" id="detail-description">Maquillaje completo y peinado de rizos para cumpleaños</p>
+        </div>
+      </div>
+
+      <button type="button" class="btn btn-save-record" id="btn-close-detail-bottom" style="margin-top:16px;">
+        <i class="fa-solid fa-check"></i> Entendido
+      </button>
     </div>
   </div>
 

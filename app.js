@@ -215,20 +215,56 @@ function renderizarTop10() {
 
     const div = document.createElement('div');
     div.className = `top10-item ${rankClass}`;
+    div.title = "Toca para ver los detalles completos";
     div.innerHTML = `
       <div class="rank-badge">${iconMedal}</div>
       <div class="top10-content">
-        <div class="top10-desc" title="${escapeHtml(item.descripcion)}">${escapeHtml(item.descripcion)}</div>
+        <div class="top10-desc">${escapeHtml(item.descripcion)}</div>
         <div class="top10-meta"><i class="fa-regular fa-calendar-days"></i> ${item.fecha || ''} ${item.hora ? '&bull; ' + item.hora : ''}</div>
       </div>
       <div class="top10-duration">${item.duracion_formateada || formatearDuracion(item.duracion_segundos)}</div>
+      <div class="top10-chevron"><i class="fa-solid fa-chevron-right"></i></div>
     `;
+
+    // Evento al tocar/hacer clic en cualquier espera del Top 10
+    div.addEventListener('click', () => {
+      abrirDetalleTop10(item, rank, iconMedal);
+    });
+
     elTop10List.appendChild(div);
   });
 }
 
+// Abrir Modal de Detalle de la Espera Top 10
+function abrirDetalleTop10(item, rank, iconMedal) {
+  const detailRankBadge = document.getElementById('detail-rank-badge');
+  const detailRankText = document.getElementById('detail-rank-text');
+  const detailDuration = document.getElementById('detail-duration');
+  const detailSeconds = document.getElementById('detail-seconds');
+  const detailDateTime = document.getElementById('detail-date-time');
+  const detailDescription = document.getElementById('detail-description');
+  const modalDetailTop10 = document.getElementById('modal-detail-top10');
+
+  if (detailRankBadge) detailRankBadge.textContent = `🏆 PUESTO #${rank}`;
+  if (detailRankText) detailRankText.textContent = `#${rank} (${rank === 1 ? 'Medalla de Oro 🥇' : rank === 2 ? 'Medalla de Plata 🥈' : rank === 3 ? 'Medalla de Bronce 🥉' : 'Top 10'})`;
+  if (detailDuration) detailDuration.textContent = item.duracion_formateada || formatearDuracion(item.duracion_segundos);
+  if (detailSeconds) detailSeconds.textContent = `${(item.duracion_segundos || 0).toLocaleString()} segundos totales`;
+  if (detailDateTime) detailDateTime.textContent = `${item.fecha || 'N/A'} ${item.hora ? 'a las ' + item.hora : ''}`;
+  if (detailDescription) detailDescription.textContent = item.descripcion || 'Sin descripción guardada';
+
+  if (modalDetailTop10) modalDetailTop10.classList.remove('hidden');
+}
+
 // Configurar listeners de botones y controles
 function configurarEventos() {
+  // Modal de Detalle Top 10
+  const btnCloseDetail = document.getElementById('btn-close-detail');
+  const btnCloseDetailBottom = document.getElementById('btn-close-detail-bottom');
+  const modalDetailTop10 = document.getElementById('modal-detail-top10');
+
+  if (btnCloseDetail) btnCloseDetail.addEventListener('click', () => modalDetailTop10.classList.add('hidden'));
+  if (btnCloseDetailBottom) btnCloseDetailBottom.addEventListener('click', () => modalDetailTop10.classList.add('hidden'));
+
   // Botón ACTIVAR CRONÓMETRO
   elBtnStart.addEventListener('click', iniciarCronometro);
 
