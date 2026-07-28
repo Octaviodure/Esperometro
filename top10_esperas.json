@@ -9,6 +9,14 @@
   },
   {
     "posicion": 2,
+    "duracion_segundos": 3,
+    "duracion_formateada": "00m 03s",
+    "fecha": "2026-07-28",
+    "hora": "10:23",
+    "descripcion": "Test Inicial 2"
+  },
+  {
+    "posicion": 3,
     "duracion_segundos": 1,
     "duracion_formateada": "00m 01s",
     "fecha": "2026-07-26",
