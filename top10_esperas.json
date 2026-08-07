@@ -41,6 +41,14 @@
   },
   {
     "posicion": 6,
+    "duracion_segundos": 3,
+    "duracion_formateada": "00m 03s",
+    "fecha": "2026-08-07",
+    "hora": "12:52",
+    "descripcion": "👠 Buscando el par de zapatos indicado"
+  },
+  {
+    "posicion": 7,
     "duracion_segundos": 1,
     "duracion_formateada": "00m 01s",
     "fecha": "2026-07-26",
