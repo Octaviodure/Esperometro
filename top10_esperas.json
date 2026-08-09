@@ -17,6 +17,14 @@
   },
   {
     "posicion": 3,
+    "duracion_segundos": 7,
+    "duracion_formateada": "00m 07s",
+    "fecha": "2026-08-09",
+    "hora": "20:34",
+    "descripcion": "👠 Buscando el par de zapatos indicado"
+  },
+  {
+    "posicion": 4,
     "duracion_segundos": 5,
     "duracion_formateada": "00m 05s",
     "fecha": "2026-07-30",
@@ -24,7 +32,7 @@
     "descripcion": "Maqiillaje"
   },
   {
-    "posicion": 4,
+    "posicion": 5,
     "duracion_segundos": 5,
     "duracion_formateada": "00m 05s",
     "fecha": "2026-08-07",
@@ -32,7 +40,7 @@
     "descripcion": "👗 Probándose 4 outfits diferentes"
   },
   {
-    "posicion": 5,
+    "posicion": 6,
     "duracion_segundos": 4,
     "duracion_formateada": "00m 04s",
     "fecha": "2026-08-04",
@@ -40,7 +48,7 @@
     "descripcion": "💄 Maquillaje y peinado de gala"
   },
   {
-    "posicion": 6,
+    "posicion": 7,
     "duracion_segundos": 3,
     "duracion_formateada": "00m 03s",
     "fecha": "2026-07-28",
@@ -48,7 +56,7 @@
     "descripcion": "Test Inicial 2"
   },
   {
-    "posicion": 7,
+    "posicion": 8,
     "duracion_segundos": 3,
     "duracion_formateada": "00m 03s",
     "fecha": "2026-08-07",
@@ -56,7 +64,7 @@
     "descripcion": "👠 Buscando el par de zapatos indicado"
   },
   {
-    "posicion": 8,
+    "posicion": 9,
     "duracion_segundos": 1,
     "duracion_formateada": "00m 01s",
     "fecha": "2026-07-26",
