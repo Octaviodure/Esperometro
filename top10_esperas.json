@@ -9,6 +9,14 @@
   },
   {
     "posicion": 2,
+    "duracion_segundos": 65,
+    "duracion_formateada": "01m 05s",
+    "fecha": "2026-08-21",
+    "hora": "07:21",
+    "descripcion": "Alistándose para la escuela"
+  },
+  {
+    "posicion": 3,
     "duracion_segundos": 15,
     "duracion_formateada": "00m 15s",
     "fecha": "2026-07-26",
@@ -16,7 +24,7 @@
     "descripcion": "Esperando a mi hijita para ver Netflix"
   },
   {
-    "posicion": 3,
+    "posicion": 4,
     "duracion_segundos": 7,
     "duracion_formateada": "00m 07s",
     "fecha": "2026-08-09",
@@ -24,7 +32,7 @@
     "descripcion": "👠 Buscando el par de zapatos indicado"
   },
   {
-    "posicion": 4,
+    "posicion": 5,
     "duracion_segundos": 5,
     "duracion_formateada": "00m 05s",
     "fecha": "2026-07-30",
@@ -32,7 +40,7 @@
     "descripcion": "Maqiillaje"
   },
   {
-    "posicion": 5,
+    "posicion": 6,
     "duracion_segundos": 5,
     "duracion_formateada": "00m 05s",
     "fecha": "2026-08-07",
@@ -40,7 +48,7 @@
     "descripcion": "👗 Probándose 4 outfits diferentes"
   },
   {
-    "posicion": 6,
+    "posicion": 7,
     "duracion_segundos": 5,
     "duracion_formateada": "00m 05s",
     "fecha": "2026-08-15",
@@ -48,7 +56,7 @@
     "descripcion": "📱 Chateando / escuchando música"
   },
   {
-    "posicion": 7,
+    "posicion": 8,
     "duracion_segundos": 5,
     "duracion_formateada": "00m 05s",
     "fecha": "2026-08-19",
@@ -56,7 +64,7 @@
     "descripcion": "✨ Último toque 'ya casi salgo'"
   },
   {
-    "posicion": 8,
+    "posicion": 9,
     "duracion_segundos": 4,
     "duracion_formateada": "00m 04s",
     "fecha": "2026-08-04",
@@ -64,19 +72,11 @@
     "descripcion": "💄 Maquillaje y peinado de gala"
   },
   {
-    "posicion": 9,
+    "posicion": 10,
     "duracion_segundos": 4,
     "duracion_formateada": "00m 04s",
     "fecha": "2026-08-15",
     "hora": "23:53",
     "descripcion": "👗 Probándose 4 outfits diferentes"
-  },
-  {
-    "posicion": 10,
-    "duracion_segundos": 3,
-    "duracion_formateada": "00m 03s",
-    "fecha": "2026-07-28",
-    "hora": "10:23",
-    "descripcion": "Test Inicial 2"
   }
 ]
