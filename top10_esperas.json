@@ -17,6 +17,14 @@
   },
   {
     "posicion": 3,
+    "duracion_segundos": 42,
+    "duracion_formateada": "00m 42s",
+    "fecha": "2026-08-22",
+    "hora": "09:36",
+    "descripcion": "Vistiendose"
+  },
+  {
+    "posicion": 4,
     "duracion_segundos": 15,
     "duracion_formateada": "00m 15s",
     "fecha": "2026-07-26",
@@ -24,7 +32,7 @@
     "descripcion": "Esperando a mi hijita para ver Netflix"
   },
   {
-    "posicion": 4,
+    "posicion": 5,
     "duracion_segundos": 11,
     "duracion_formateada": "00m 11s",
     "fecha": "2026-08-22",
@@ -32,7 +40,7 @@
     "descripcion": "💄 Maquillaje y peinado de gala"
   },
   {
-    "posicion": 5,
+    "posicion": 6,
     "duracion_segundos": 7,
     "duracion_formateada": "00m 07s",
     "fecha": "2026-08-09",
@@ -40,7 +48,7 @@
     "descripcion": "👠 Buscando el par de zapatos indicado"
   },
   {
-    "posicion": 6,
+    "posicion": 7,
     "duracion_segundos": 5,
     "duracion_formateada": "00m 05s",
     "fecha": "2026-07-30",
@@ -48,7 +56,7 @@
     "descripcion": "Maqiillaje"
   },
   {
-    "posicion": 7,
+    "posicion": 8,
     "duracion_segundos": 5,
     "duracion_formateada": "00m 05s",
     "fecha": "2026-08-07",
@@ -56,7 +64,7 @@
     "descripcion": "👗 Probándose 4 outfits diferentes"
   },
   {
-    "posicion": 8,
+    "posicion": 9,
     "duracion_segundos": 5,
     "duracion_formateada": "00m 05s",
     "fecha": "2026-08-15",
@@ -64,19 +72,11 @@
     "descripcion": "📱 Chateando / escuchando música"
   },
   {
-    "posicion": 9,
+    "posicion": 10,
     "duracion_segundos": 5,
     "duracion_formateada": "00m 05s",
     "fecha": "2026-08-19",
     "hora": "12:55",
     "descripcion": "✨ Último toque 'ya casi salgo'"
-  },
-  {
-    "posicion": 10,
-    "duracion_segundos": 4,
-    "duracion_formateada": "00m 04s",
-    "fecha": "2026-08-04",
-    "hora": "17:54",
-    "descripcion": "💄 Maquillaje y peinado de gala"
   }
 ]
