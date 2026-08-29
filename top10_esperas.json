@@ -49,6 +49,14 @@
   },
   {
     "posicion": 7,
+    "duracion_segundos": 9,
+    "duracion_formateada": "00m 09s",
+    "fecha": "2026-08-29",
+    "hora": "12:28",
+    "descripcion": "👗 Probándose 4 outfits diferentes"
+  },
+  {
+    "posicion": 8,
     "duracion_segundos": 7,
     "duracion_formateada": "00m 07s",
     "fecha": "2026-08-09",
@@ -56,7 +64,7 @@
     "descripcion": "👠 Buscando el par de zapatos indicado"
   },
   {
-    "posicion": 8,
+    "posicion": 9,
     "duracion_segundos": 5,
     "duracion_formateada": "00m 05s",
     "fecha": "2026-07-30",
@@ -64,19 +72,11 @@
     "descripcion": "Maqiillaje"
   },
   {
-    "posicion": 9,
+    "posicion": 10,
     "duracion_segundos": 5,
     "duracion_formateada": "00m 05s",
     "fecha": "2026-08-07",
     "hora": "12:08",
     "descripcion": "👗 Probándose 4 outfits diferentes"
-  },
-  {
-    "posicion": 10,
-    "duracion_segundos": 5,
-    "duracion_formateada": "00m 05s",
-    "fecha": "2026-08-15",
-    "hora": "21:18",
-    "descripcion": "📱 Chateando / escuchando música"
   }
 ]
