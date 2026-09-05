@@ -65,18 +65,18 @@
   },
   {
     "posicion": 9,
-    "duracion_segundos": 5,
-    "duracion_formateada": "00m 05s",
-    "fecha": "2026-07-30",
-    "hora": "18:43",
-    "descripcion": "Maqiillaje"
+    "duracion_segundos": 7,
+    "duracion_formateada": "00m 07s",
+    "fecha": "2026-09-05",
+    "hora": "15:36",
+    "descripcion": "Terminando el Rancho Chileno"
   },
   {
     "posicion": 10,
     "duracion_segundos": 5,
     "duracion_formateada": "00m 05s",
-    "fecha": "2026-08-07",
-    "hora": "12:08",
-    "descripcion": "👗 Probándose 4 outfits diferentes"
+    "fecha": "2026-07-30",
+    "hora": "18:43",
+    "descripcion": "Maqiillaje"
   }
 ]
