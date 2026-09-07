@@ -25,6 +25,14 @@
   },
   {
     "posicion": 4,
+    "duracion_segundos": 35,
+    "duracion_formateada": "00m 35s",
+    "fecha": "2026-09-07",
+    "hora": "12:44",
+    "descripcion": "Test"
+  },
+  {
+    "posicion": 5,
     "duracion_segundos": 15,
     "duracion_formateada": "00m 15s",
     "fecha": "2026-07-26",
@@ -32,7 +40,7 @@
     "descripcion": "Esperando a mi hijita para ver Netflix"
   },
   {
-    "posicion": 5,
+    "posicion": 6,
     "duracion_segundos": 11,
     "duracion_formateada": "00m 11s",
     "fecha": "2026-08-22",
@@ -40,7 +48,7 @@
     "descripcion": "💄 Maquillaje y peinado de gala"
   },
   {
-    "posicion": 6,
+    "posicion": 7,
     "duracion_segundos": 11,
     "duracion_formateada": "00m 11s",
     "fecha": "2026-08-25",
@@ -48,7 +56,7 @@
     "descripcion": "👗 Probándose 4 outfits diferentes"
   },
   {
-    "posicion": 7,
+    "posicion": 8,
     "duracion_segundos": 9,
     "duracion_formateada": "00m 09s",
     "fecha": "2026-08-29",
@@ -56,7 +64,7 @@
     "descripcion": "👗 Probándose 4 outfits diferentes"
   },
   {
-    "posicion": 8,
+    "posicion": 9,
     "duracion_segundos": 7,
     "duracion_formateada": "00m 07s",
     "fecha": "2026-08-09",
@@ -64,19 +72,11 @@
     "descripcion": "👠 Buscando el par de zapatos indicado"
   },
   {
-    "posicion": 9,
+    "posicion": 10,
     "duracion_segundos": 7,
     "duracion_formateada": "00m 07s",
     "fecha": "2026-09-05",
     "hora": "15:36",
     "descripcion": "Terminando el Rancho Chileno"
-  },
-  {
-    "posicion": 10,
-    "duracion_segundos": 6,
-    "duracion_formateada": "00m 06s",
-    "fecha": "2026-09-06",
-    "hora": "20:21",
-    "descripcion": "👠 Buscando el par de zapatos indicado"
   }
 ]
